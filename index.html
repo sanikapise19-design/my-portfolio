@@ -71,7 +71,6 @@
         color: #f0f0e8;
       }
 
-      /* Dark mode backgrounds - more neutral dark */
       body.dark-mode .bg-white {
         background: #16261e !important;
         color: #f0f0e8 !important;
@@ -83,7 +82,6 @@
         background: #0d1a14 !important;
       }
 
-      /* Dark mode cards - clean dark with subtle borders */
       body.dark-mode .card-project,
       body.dark-mode .edu-card,
       body.dark-mode .contact-card-enhanced {
@@ -106,24 +104,20 @@
         background: linear-gradient(90deg, #d4d4b0, #b7b78a) !important;
       }
 
-      /* Dark mode project images */
       body.dark-mode .project-img {
         background: #1a2d24 !important;
       }
 
-      /* Dark mode badges */
       body.dark-mode .badge-tech {
         background: rgba(183, 183, 138, 0.15) !important;
         color: #d4d4b0 !important;
         border-color: rgba(183, 183, 138, 0.1) !important;
       }
 
-      /* Dark mode about image */
       body.dark-mode .about-img-wrapper {
         border-color: #2a4d3c !important;
       }
 
-      /* Dark mode captcha */
       body.dark-mode .captcha-box {
         background: #1a2d24 !important;
         border-color: #2a4d3c !important;
@@ -145,13 +139,11 @@
         color: #d4d4b0 !important;
       }
 
-      /* Dark mode footer */
       body.dark-mode .footer {
         background: #080f0c !important;
         color: rgba(255, 255, 255, 0.4) !important;
       }
 
-      /* Dark mode skills */
       body.dark-mode .skill-glass .progress-track {
         background: rgba(255, 255, 255, 0.1) !important;
       }
@@ -174,7 +166,6 @@
         color: #d4d4b0 !important;
       }
 
-      /* Dark mode modals */
       body.dark-mode .modal-content {
         background: #1a2d24 !important;
         color: #f0f0e8 !important;
@@ -193,7 +184,6 @@
         filter: invert(1);
       }
 
-      /* Dark mode task showcase */
       body.dark-mode .task-showcase {
         background: #1a2d24 !important;
         border-color: #2a4d3c !important;
@@ -202,7 +192,6 @@
         color: #b0b8a8 !important;
       }
 
-      /* Dark mode contact card */
       body.dark-mode .contact-card-simple {
         background: rgba(255, 255, 255, 0.04) !important;
         border-color: rgba(255, 255, 255, 0.06) !important;
@@ -230,7 +219,6 @@
         border-color: rgba(183, 183, 138, 0.05) !important;
       }
 
-      /* Dark mode certificates */
       body.dark-mode .cert-card {
         background: rgba(255, 255, 255, 0.04) !important;
         border-color: rgba(255, 255, 255, 0.06) !important;
@@ -249,7 +237,6 @@
         border-color: rgba(255, 255, 255, 0.05) !important;
       }
 
-      /* Dark mode gallery */
       body.dark-mode .gallery-item {
         background: rgba(255, 255, 255, 0.04) !important;
         border-color: rgba(255, 255, 255, 0.06) !important;
@@ -269,7 +256,6 @@
         color: #d4d4b0 !important;
       }
 
-      /* Dark mode flip cards */
       body.dark-mode .flip-card-front {
         background: #1a2d24 !important;
         color: #f0f0e8 !important;
@@ -305,7 +291,6 @@
         border-bottom-color: rgba(255, 255, 255, 0.05) !important;
       }
 
-      /* Dark mode contact form */
       body.dark-mode .orbit-contact-form {
         background: rgba(255, 255, 255, 0.04) !important;
         border-color: rgba(255, 255, 255, 0.06) !important;
@@ -337,7 +322,6 @@
         border-color: rgba(255, 255, 255, 0.06) !important;
       }
 
-      /* Dark mode project modal content */
       body.dark-mode .modal-project-content .form-preview {
         background: #1a2d24 !important;
         color: #f0f0e8 !important;
@@ -371,7 +355,6 @@
         background: #9f9f7a !important;
       }
 
-      /* Dark mode resume modal */
       body.dark-mode .resume-modal-body {
         background: #1a2d24 !important;
         color: #f0f0e8 !important;
@@ -419,7 +402,6 @@
         border-top-color: rgba(255, 255, 255, 0.05) !important;
       }
 
-      /* Dark mode certificate modal */
       body.dark-mode .cert-modal-nav button {
         background: #2a4d3c !important;
         color: #f0f0e8 !important;
@@ -440,7 +422,6 @@
         color: #b0b8a8 !important;
       }
 
-      /* Dark mode hero section */
       body.dark-mode .hero {
         background: linear-gradient(
           145deg,
@@ -485,7 +466,6 @@
         color: #f0f0e8 !important;
       }
 
-      /* Dark mode about section text */
       body.dark-mode #about .fs-5 {
         color: #d0d8c8 !important;
       }
@@ -501,14 +481,12 @@
         color: #f0f0e8 !important;
       }
 
-      /* ===== PREVENT TEXT BLUR IN DARK MODE ===== */
       body.dark-mode * {
         -webkit-font-smoothing: antialiased !important;
         -moz-osx-font-smoothing: grayscale !important;
         text-shadow: none !important;
       }
 
-      /* Keep glass effects but prevent text blur */
       body.dark-mode .skill-glass,
       body.dark-mode .contact-card-simple,
       body.dark-mode .orbit-contact-form,
@@ -723,22 +701,42 @@
         color: white;
         box-shadow: 0 4px 14px rgba(143, 143, 106, 0.4);
       }
+
+      /* ===== THEME TOGGLE BUTTON - IMPROVED ===== */
       .theme-toggle-btn {
-        background: rgba(255, 255, 255, 0.08);
-        border: 1px solid rgba(255, 255, 255, 0.15);
-        color: white;
+        background: rgba(255, 255, 255, 0.12);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: #ffffff;
         border-radius: 50%;
-        width: 40px;
-        height: 40px;
+        width: 44px;
+        height: 44px;
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: 0.3s;
+        transition: all 0.3s ease;
         cursor: pointer;
+        font-size: 1.2rem;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        flex-shrink: 0;
       }
       .theme-toggle-btn:hover {
-        background: #8f8f6a;
-        transform: rotate(30deg);
+        background: linear-gradient(135deg, #8f8f6a, #b7b78a);
+        transform: rotate(30deg) scale(1.05);
+        border-color: #d4d4b0;
+        box-shadow: 0 4px 20px rgba(183, 183, 138, 0.3);
+        color: #ffffff;
+      }
+
+      body.dark-mode .theme-toggle-btn {
+        background: rgba(255, 255, 255, 0.08);
+        border-color: rgba(255, 255, 255, 0.15);
+        color: #d4d4b0;
+      }
+      body.dark-mode .theme-toggle-btn:hover {
+        background: linear-gradient(135deg, #d4d4b0, #b7b78a);
+        color: #1a1a1a;
+        border-color: #d4d4b0;
       }
 
       /* ===== GOOGLE TRANSLATE STYLES ===== */
@@ -776,6 +774,15 @@
       .goog-te-gadget .goog-te-combo option {
         color: #1a1a1a;
         background: #f5f0e8;
+      }
+      body.dark-mode .goog-te-gadget .goog-te-combo {
+        background: rgba(255, 255, 255, 0.08);
+        border-color: rgba(255, 255, 255, 0.15);
+        color: #f0f0e8;
+      }
+      body.dark-mode .goog-te-gadget .goog-te-combo option {
+        color: #1a1a1a;
+        background: #1a2d24;
       }
       .goog-te-banner-frame.skiptranslate {
         display: none !important;
@@ -1572,23 +1579,24 @@
       .orbit-contact-form .form-control {
         background: rgba(255, 255, 255, 0.15);
         border: 1px solid rgba(255, 255, 255, 0.2);
-        color: #ffffff;
+        color: #000000;
         border-radius: 12px;
         padding: 0.7rem 1.2rem;
         transition: all 0.3s;
       }
       .orbit-contact-form .form-control::placeholder {
-        color: rgba(255, 255, 255, 0.6);
+        color: #000000;
+        opacity: 0.6;
       }
       .orbit-contact-form .form-control:focus {
-        background: rgba(255, 255, 255, 0.2);
+        background: rgba(255, 255, 255, 0.25);
         border-color: #d4d4b0;
         box-shadow: 0 0 0 4px rgba(183, 183, 138, 0.15);
-        color: #ffffff;
+        color: #000000;
         transform: scale(1.01);
       }
       .orbit-contact-form label {
-        color: rgba(255, 255, 255, 0.8);
+        color: #000000;
         font-size: 0.75rem;
         font-weight: 600;
         letter-spacing: 0.5px;
@@ -1642,39 +1650,41 @@
         gap: 12px;
       }
       .orbit-contact-form .captcha-box .captcha-text {
-        background: rgba(0, 0, 0, 0.3);
-        color: #d4d4b0;
-        border-color: rgba(143, 143, 106, 0.3);
+        background: rgba(0, 0, 0, 0.15);
+        color: #1a1a1a;
+        border-color: rgba(143, 143, 106, 0.2);
         font-size: 1.1rem;
         font-weight: 700;
         letter-spacing: 3px;
-        padding: 4px 16px;
+        padding: 4px 14px;
         border-radius: 8px;
         font-family: "Courier New", monospace;
         user-select: none;
       }
       .orbit-contact-form .captcha-box .captcha-refresh {
-        color: rgba(255, 255, 255, 0.6);
+        color: #1a1a1a;
         background: none;
         border: none;
-        font-size: 1.1rem;
-        transition: 0.4s;
+        font-size: 1rem;
+        transition: 0.3s;
         cursor: pointer;
+        padding: 4px 8px;
       }
       .orbit-contact-form .captcha-box .captcha-refresh:hover {
-        color: #d4d4b0;
+        color: #8f8f6a;
         transform: rotate(180deg) scale(1.1);
       }
       .orbit-contact-form .captcha-input {
         background: rgba(255, 255, 255, 0.1) !important;
         border-color: rgba(255, 255, 255, 0.15) !important;
-        color: #ffffff !important;
+        color: #000000 !important;
         border-radius: 40px !important;
         padding: 0.4rem 1.2rem !important;
         font-size: 0.85rem !important;
       }
       .orbit-contact-form .captcha-input::placeholder {
-        color: rgba(255, 255, 255, 0.5) !important;
+        color: #000000 !important;
+        opacity: 0.6 !important;
       }
       .orbit-contact-form .captcha-input:focus {
         background: rgba(255, 255, 255, 0.2) !important;
@@ -1682,17 +1692,28 @@
         box-shadow: 0 0 0 4px rgba(183, 183, 138, 0.1) !important;
       }
 
-      .orbit-contact-form .form-control::placeholder {
-        color: #000000 !important;
-        opacity: 1;
+      /* Dark mode contact form overrides */
+      body.dark-mode .orbit-contact-form .form-control {
+        color: #f0f0e8 !important;
       }
-      .orbit-contact-form .captcha-input::placeholder {
-        color: #000000 !important;
-        opacity: 1;
+      body.dark-mode .orbit-contact-form .form-control::placeholder {
+        color: #889088 !important;
       }
-      .orbit-contact-form .form-control,
-      .orbit-contact-form .captcha-input {
-        color: #000000 !important;
+      body.dark-mode .orbit-contact-form label {
+        color: #c0c8b8 !important;
+      }
+      body.dark-mode .orbit-contact-form .captcha-box .captcha-text {
+        color: #d4d4b0 !important;
+        background: #0d1a14 !important;
+      }
+      body.dark-mode .orbit-contact-form .captcha-box .captcha-refresh {
+        color: #d4d4b0 !important;
+      }
+      body.dark-mode .orbit-contact-form .captcha-input {
+        color: #f0f0e8 !important;
+      }
+      body.dark-mode .orbit-contact-form .captcha-input::placeholder {
+        color: #889088 !important;
       }
 
       /* ===== FLIP CARDS - Education ===== */
@@ -1910,6 +1931,16 @@
         }
         .orbit-contact-form {
           padding: 1.2rem 1.2rem;
+        }
+        .theme-toggle-btn {
+          width: 38px;
+          height: 38px;
+          font-size: 1rem;
+        }
+        .navbar-brand .logo-sp {
+          width: 36px;
+          height: 36px;
+          font-size: 1rem;
         }
       }
 
@@ -2224,6 +2255,40 @@
         font-size: 0.75rem;
         color: #8a9bb5;
       }
+
+      /* ===== RESUME MODAL CLOSE BUTTON ===== */
+      .resume-close-btn {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        background: rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(4px);
+        z-index: 10;
+      }
+      .resume-close-btn:hover {
+        background: rgba(255, 255, 255, 0.25);
+        transform: rotate(90deg) scale(1.1);
+        border-color: rgba(255, 255, 255, 0.4);
+      }
+      body.dark-mode .resume-close-btn {
+        background: rgba(255, 255, 255, 0.08);
+        border-color: rgba(255, 255, 255, 0.1);
+      }
+      body.dark-mode .resume-close-btn:hover {
+        background: rgba(255, 255, 255, 0.15);
+      }
+
       @media (max-width: 576px) {
         .resume-modal-header h1 {
           font-size: 1.8rem;
@@ -2237,6 +2302,38 @@
         .resume-modal-header {
           padding: 1.5rem 1.2rem;
         }
+        .resume-close-btn {
+          top: 0.7rem;
+          right: 1rem;
+          width: 34px;
+          height: 34px;
+          font-size: 1rem;
+        }
+      }
+
+      /* ===== DARK MODE NAVBAR FIXES ===== */
+      body.dark-mode .navbar-custom {
+        background: rgba(13, 26, 20, 0.95);
+        border-bottom-color: rgba(255, 255, 255, 0.05);
+      }
+      body.dark-mode .navbar-custom .navbar-brand span {
+        color: #f0f0e8;
+      }
+      body.dark-mode .navbar-custom .navbar-nav .nav-link {
+        color: rgba(255, 255, 255, 0.7);
+      }
+      body.dark-mode .navbar-custom .navbar-nav .nav-link:hover {
+        color: #ffffff;
+        background: rgba(255, 255, 255, 0.08);
+      }
+      body.dark-mode .navbar-custom .navbar-nav .nav-link::after {
+        background: #d4d4b0;
+      }
+      body.dark-mode .navbar-toggler {
+        border-color: rgba(255, 255, 255, 0.2);
+      }
+      body.dark-mode .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
       }
 
       .bg-soft-primary {
@@ -2649,6 +2746,30 @@
       body.dark-mode .resume-modal-body .profile-text strong {
         color: #d4d4b0 !important;
       }
+
+      /* ===== RESPONSIVE NAVBAR FIXES ===== */
+      @media (max-width: 992px) {
+        .navbar-custom .navbar-nav {
+          padding-top: 1rem;
+          gap: 0.5rem;
+        }
+        .navbar-custom .navbar-nav .nav-item {
+          width: 100%;
+        }
+        .navbar-custom .navbar-nav .nav-item .nav-link {
+          text-align: center;
+        }
+        .navbar-custom .navbar-nav .nav-item .theme-toggle-btn {
+          margin: 0 auto;
+        }
+        #google_translate_element {
+          text-align: center;
+          padding: 0.5rem 0;
+        }
+        .navbar-custom .navbar-nav .nav-item .btn {
+          width: 100%;
+        }
+      }
     </style>
   </head>
   <body>
@@ -2738,11 +2859,13 @@
                 style="display: inline-block"
               ></div>
             </li>
+            <!-- Theme Toggle - at the end of navbar -->
             <li class="nav-item ms-2">
               <button
                 onclick="toggleTheme()"
                 class="theme-toggle-btn"
                 id="themeToggle"
+                aria-label="Toggle theme"
               >
                 <i class="bi bi-moon-fill"></i>
               </button>
@@ -2751,7 +2874,6 @@
         </div>
       </div>
     </nav>
-
     <!-- ===== HERO ===== -->
     <section class="hero" id="home">
       <div class="hero-overlay"></div>
@@ -3944,6 +4066,15 @@
           style="border-radius: 20px; overflow: hidden; background: #ffffff"
         >
           <div class="resume-modal-header">
+            <!-- Close Button -->
+            <button
+              type="button"
+              class="resume-close-btn"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="bi bi-x-lg"></i>
+            </button>
             <div class="badge-sp">
               <i class="bi bi-star-fill me-1" style="font-size: 0.6rem"></i>
               Diploma Student · CSE
@@ -4215,7 +4346,48 @@
 
     <script>
       // ==========================================
-      // 1. AOS INITIALIZATION
+      // 1. THEME TOGGLE - IMPROVED WITH PERSISTENCE
+      // ==========================================
+      function toggleTheme() {
+        const body = document.body;
+        const icon = document.querySelector("#themeToggle i");
+
+        body.classList.toggle("dark-mode");
+
+        // Update icon
+        if (body.classList.contains("dark-mode")) {
+          icon.className = "bi bi-sun-fill";
+          localStorage.setItem("theme", "dark");
+        } else {
+          icon.className = "bi bi-moon-fill";
+          localStorage.setItem("theme", "light");
+        }
+      }
+
+      // ==========================================
+      // 2. THEME INITIALIZATION
+      // ==========================================
+      function initTheme() {
+        const savedTheme = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches;
+        const icon = document.querySelector("#themeToggle i");
+
+        if (savedTheme === "dark") {
+          document.body.classList.add("dark-mode");
+          icon.className = "bi bi-sun-fill";
+        } else if (savedTheme === "light") {
+          document.body.classList.remove("dark-mode");
+          icon.className = "bi bi-moon-fill";
+        } else if (prefersDark) {
+          document.body.classList.add("dark-mode");
+          icon.className = "bi bi-sun-fill";
+        }
+      }
+
+      // ==========================================
+      // 3. AOS INITIALIZATION
       // ==========================================
       AOS.init({
         duration: 800,
@@ -4225,22 +4397,12 @@
       });
 
       // ==========================================
-      // 2. THEME TOGGLE
-      // ==========================================
-      function toggleTheme() {
-        document.body.classList.toggle("dark-mode");
-        const icon = document.querySelector("#themeToggle i");
-        if (document.body.classList.contains("dark-mode")) {
-          icon.className = "bi bi-sun-fill";
-        } else {
-          icon.className = "bi bi-moon-fill";
-        }
-      }
-
-      // ==========================================
-      // 3. SKILL BARS ANIMATION
+      // 4. SKILL BARS ANIMATION
       // ==========================================
       document.addEventListener("DOMContentLoaded", function () {
+        // Initialize theme
+        initTheme();
+
         const fills = document.querySelectorAll(".progress-fill");
         const observer = new IntersectionObserver(
           (entries) => {
@@ -4252,11 +4414,6 @@
         );
         fills.forEach((f) => observer.observe(f));
       });
-
-      // ==========================================
-      // 4. ABOUT IMAGE - REMOVED CLICK OVERLAY
-      // ==========================================
-      // (No overlay logic needed; image displays directly)
 
       // ==========================================
       // 5. BACK TO TOP BUTTON
@@ -4525,7 +4682,6 @@
         imgElement.alt = cert.title;
         imgElement.style.display = "block";
 
-        // Remove any previous fallback message
         const parent = imgElement.parentElement;
         if (parent) {
           const fallback = parent.querySelector(".fallback-message");
