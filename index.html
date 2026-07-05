@@ -702,43 +702,59 @@
         box-shadow: 0 4px 14px rgba(143, 143, 106, 0.4);
       }
 
-      /* ===== THEME TOGGLE BUTTON - IMPROVED ===== */
+      /* ===== THEME TOGGLE BUTTON - RIGHT SIDE ===== */
       .theme-toggle-btn {
-        background: rgba(255, 255, 255, 0.12);
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.25);
         color: #ffffff;
         border-radius: 50%;
-        width: 44px;
-        height: 44px;
+        width: 40px;
+        height: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
         transition: all 0.3s ease;
         cursor: pointer;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(8px);
         flex-shrink: 0;
+        margin-left: 8px;
       }
       .theme-toggle-btn:hover {
-        background: linear-gradient(135deg, #8f8f6a, #b7b78a);
+        background: rgba(255, 255, 255, 0.35);
         transform: rotate(30deg) scale(1.05);
-        border-color: #d4d4b0;
-        box-shadow: 0 4px 20px rgba(183, 183, 138, 0.3);
+        border-color: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
         color: #ffffff;
       }
 
+      /* Dark mode toggle button */
       body.dark-mode .theme-toggle-btn {
         background: rgba(255, 255, 255, 0.08);
         border-color: rgba(255, 255, 255, 0.15);
         color: #d4d4b0;
       }
       body.dark-mode .theme-toggle-btn:hover {
-        background: linear-gradient(135deg, #d4d4b0, #b7b78a);
-        color: #1a1a1a;
+        background: rgba(255, 255, 255, 0.15);
+        color: #ffffff;
         border-color: #d4d4b0;
+        box-shadow: 0 4px 14px rgba(143, 143, 106, 0.4);
       }
 
+      /* ===== RESPONSIVE ADJUSTMENTS ===== */
+      @media (max-width: 576px) {
+        .theme-toggle-btn {
+          width: 34px;
+          height: 34px;
+          font-size: 0.9rem;
+        }
+        .navbar-brand .logo-sp {
+          width: 36px;
+          height: 36px;
+          font-size: 1rem;
+        }
+      }
       /* ===== GOOGLE TRANSLATE STYLES ===== */
       .goog-te-gadget {
         font-family: "Inter", sans-serif !important;
@@ -1936,6 +1952,7 @@
           width: 38px;
           height: 38px;
           font-size: 1rem;
+          margin-left: 4px;
         }
         .navbar-brand .logo-sp {
           width: 36px;
@@ -2256,39 +2273,23 @@
         color: #8a9bb5;
       }
 
-      /* ===== RESUME MODAL CLOSE BUTTON ===== */
-      .resume-close-btn {
-        position: absolute;
-        top: 1rem;
-        right: 1.5rem;
-        background: rgba(255, 255, 255, 0.15);
-        border: 1px solid rgba(255, 255, 255, 0.2);
+      /* Resume modal close button */
+      .resume-modal .btn-close-resume {
+        background: none;
+        border: none;
         color: white;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.3rem;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        backdrop-filter: blur(4px);
+        font-size: 1.5rem;
+        opacity: 0.8;
+        transition: 0.3s;
+        position: absolute;
+        top: 1.2rem;
+        right: 1.5rem;
         z-index: 10;
       }
-      .resume-close-btn:hover {
-        background: rgba(255, 255, 255, 0.25);
+      .resume-modal .btn-close-resume:hover {
+        opacity: 1;
         transform: rotate(90deg) scale(1.1);
-        border-color: rgba(255, 255, 255, 0.4);
       }
-      body.dark-mode .resume-close-btn {
-        background: rgba(255, 255, 255, 0.08);
-        border-color: rgba(255, 255, 255, 0.1);
-      }
-      body.dark-mode .resume-close-btn:hover {
-        background: rgba(255, 255, 255, 0.15);
-      }
-
       @media (max-width: 576px) {
         .resume-modal-header h1 {
           font-size: 1.8rem;
@@ -2302,12 +2303,10 @@
         .resume-modal-header {
           padding: 1.5rem 1.2rem;
         }
-        .resume-close-btn {
-          top: 0.7rem;
+        .resume-modal .btn-close-resume {
+          top: 0.8rem;
           right: 1rem;
-          width: 34px;
-          height: 34px;
-          font-size: 1rem;
+          font-size: 1.2rem;
         }
       }
 
@@ -2770,16 +2769,51 @@
           width: 100%;
         }
       }
+
+      /* Resume modal close button - remove default close */
+      .resume-modal .btn-close {
+        display: none !important;
+      }
+
+      /* Animation for resume button click */
+      .resume-btn-animate {
+        animation: resumePop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+      }
+      @keyframes resumePop {
+        0% {
+          transform: scale(1);
+        }
+        30% {
+          transform: scale(1.15);
+          box-shadow: 0 0 30px rgba(183, 183, 138, 0.6);
+        }
+        60% {
+          transform: scale(0.95);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
     </style>
   </head>
   <body>
     <!-- ===== NAVBAR ===== -->
     <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="#">
-          <div class="logo-sp me-2">SP</div>
-          <span>Sanika</span>
-        </a>
+        <div class="d-flex align-items-center gap-2">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <div class="logo-sp me-2">SP</div>
+            <span>Sanika</span>
+            <span
+              style="
+                margin-left: 4px;
+                font-weight: 300;
+                opacity: 0.6;
+                font-size: 0.9rem;
+              "
+            ></span>
+          </a>
+        </div>
         <button
           class="navbar-toggler border-0"
           type="button"
@@ -2836,31 +2870,13 @@
                 >Contact</a
               >
             </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#"
-                data-bs-toggle="modal"
-                data-bs-target="#resumeModal"
-                style="
-                  background: linear-gradient(135deg, #8f8f6a, #b7b78a);
-                  color: white !important;
-                  border-radius: 40px;
-                  padding: 0.5rem 1.5rem;
-                  font-weight: 600;
-                "
-              >
-                <i class="bi bi-file-earmark-pdf me-1"></i>Resume
-              </a>
-            </li>
             <li class="nav-item ms-2">
               <div
                 id="google_translate_element"
                 style="display: inline-block"
               ></div>
             </li>
-            <!-- Theme Toggle - at the end of navbar -->
-            <li class="nav-item ms-2">
+            <li class="nav-item">
               <button
                 onclick="toggleTheme()"
                 class="theme-toggle-btn"
@@ -2874,6 +2890,7 @@
         </div>
       </div>
     </nav>
+
     <!-- ===== HERO ===== -->
     <section class="hero" id="home">
       <div class="hero-overlay"></div>
@@ -2900,9 +2917,10 @@
           </a>
           <a
             href="#"
-            class="btn btn-primary"
+            class="btn btn-primary resume-hero-btn"
             data-bs-toggle="modal"
             data-bs-target="#resumeModal"
+            id="resumeHeroBtn"
           >
             <i class="bi bi-file-earmark-pdf me-1"></i> My Resume
           </a>
@@ -4058,18 +4076,23 @@
       </div>
     </section>
 
-    <!-- ===== RESUME MODAL ===== -->
-    <div class="modal fade" id="resumeModal" tabindex="-1" aria-hidden="true">
+    <!-- ===== RESUME MODAL (with custom close button) ===== -->
+    <div
+      class="modal fade resume-modal"
+      id="resumeModal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div
           class="modal-content"
           style="border-radius: 20px; overflow: hidden; background: #ffffff"
         >
           <div class="resume-modal-header">
-            <!-- Close Button -->
+            <!-- Custom Close Button -->
             <button
               type="button"
-              class="resume-close-btn"
+              class="btn-close-resume"
               data-bs-dismiss="modal"
               aria-label="Close"
             >
@@ -4400,7 +4423,6 @@
       // 4. SKILL BARS ANIMATION
       // ==========================================
       document.addEventListener("DOMContentLoaded", function () {
-        // Initialize theme
         initTheme();
 
         const fills = document.querySelectorAll(".progress-fill");
@@ -4413,6 +4435,40 @@
           { threshold: 0.3 },
         );
         fills.forEach((f) => observer.observe(f));
+
+        // Resume button animation
+        const resumeBtns = document.querySelectorAll(
+          "#resumeNavBtn, #resumeHeroBtn",
+        );
+        resumeBtns.forEach((btn) => {
+          btn.addEventListener("click", function (e) {
+            // Add animation class
+            this.classList.add("resume-btn-animate");
+            // Remove after animation ends
+            setTimeout(() => {
+              this.classList.remove("resume-btn-animate");
+            }, 600);
+          });
+        });
+
+        // ==========================================
+        // 4.5 NAVBAR COLLAPSE ON THEME TOGGLE (FIX)
+        // ==========================================
+        // When theme toggle button is clicked, close the navbar collapse
+        const themeToggleBtn = document.getElementById("themeToggle");
+        if (themeToggleBtn) {
+          themeToggleBtn.addEventListener("click", function () {
+            const navbarCollapse = document.getElementById("navbarNav");
+            if (navbarCollapse && navbarCollapse.classList.contains("show")) {
+              const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+              if (bsCollapse) {
+                bsCollapse.hide();
+              } else {
+                navbarCollapse.classList.remove("show");
+              }
+            }
+          });
+        }
       });
 
       // ==========================================
@@ -4742,6 +4798,16 @@
               }
             };
           });
+      });
+      const resumeBtn = document.getElementById("resumeNavBtn");
+      const resumeModal = document.getElementById("resumeModal");
+
+      resumeModal.addEventListener("show.bs.modal", function () {
+        resumeBtn.classList.add("active");
+      });
+
+      resumeModal.addEventListener("hidden.bs.modal", function () {
+        resumeBtn.classList.remove("active");
       });
 
       console.log("🚀 Sanika Pise Portfolio loaded successfully!");
