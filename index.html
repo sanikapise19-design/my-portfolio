@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
     <title>Sanika Pise · Portfolio</title>
     <!-- Bootstrap 5 + Icons -->
     <link
@@ -30,17 +30,11 @@
         box-sizing: border-box;
       }
       body {
-        font-family:
-          "Inter",
-          system-ui,
-          -apple-system,
-          sans-serif;
+        font-family: "Inter", system-ui, -apple-system, sans-serif;
         background: #f5f0e8;
         color: #1a1a1a;
         scroll-behavior: smooth;
-        transition:
-          background 0.3s,
-          color 0.3s;
+        transition: background 0.3s, color 0.3s;
         overflow-x: hidden;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
@@ -391,11 +385,7 @@
         color: #f0f0e8 !important;
       }
       body.dark-mode .resume-modal-body .hr-custom {
-        background: linear-gradient(
-          90deg,
-          rgba(255, 255, 255, 0.05),
-          rgba(255, 255, 255, 0.02)
-        ) !important;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02)) !important;
       }
       body.dark-mode .resume-modal-footer {
         background: #0d1a14 !important;
@@ -423,11 +413,7 @@
       }
 
       body.dark-mode .hero {
-        background: linear-gradient(
-          145deg,
-          #0d1a14 0%,
-          #16261e 100%
-        ) !important;
+        background: linear-gradient(145deg, #0d1a14 0%, #16261e 100%) !important;
       }
       body.dark-mode .hero-content h1 {
         color: #f0f0e8 !important;
@@ -446,11 +432,7 @@
         border-left-color: #d4d4b0 !important;
       }
       body.dark-mode .hero-overlay {
-        background: radial-gradient(
-          circle at 20% 30%,
-          rgba(183, 183, 138, 0.05) 0%,
-          rgba(13, 26, 20, 0.6) 90%
-        ) !important;
+        background: radial-gradient(circle at 20% 30%, rgba(183, 183, 138, 0.05) 0%, rgba(13, 26, 20, 0.6) 90%) !important;
       }
       body.dark-mode .hero-content .mt-4 .small {
         color: #b0b8a8 !important;
@@ -603,12 +585,7 @@
         animation: float 6s ease-in-out infinite;
       }
       .animate-shimmer {
-        background: linear-gradient(
-          90deg,
-          transparent,
-          rgba(255, 255, 255, 0.1),
-          transparent
-        );
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
         background-size: 200% 100%;
         animation: shimmer 3s infinite;
       }
@@ -881,11 +858,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: radial-gradient(
-          circle at 20% 30%,
-          rgba(183, 183, 138, 0.15) 0%,
-          rgba(245, 240, 232, 0.4) 90%
-        );
+        background: radial-gradient(circle at 20% 30%, rgba(183, 183, 138, 0.15) 0%, rgba(245, 240, 232, 0.4) 90%);
         z-index: 1;
       }
       .hero-content {
@@ -979,15 +952,10 @@
         align-items: center;
         justify-content: center;
         background: linear-gradient(135deg, #8f8f6a, #b7b78a);
-        box-shadow:
-          0 0 30px rgba(143, 143, 106, 0.3),
-          0 0 60px rgba(143, 143, 106, 0.15),
-          0 0 100px rgba(143, 143, 106, 0.08);
+        box-shadow: 0 0 30px rgba(143, 143, 106, 0.3), 0 0 60px rgba(143, 143, 106, 0.15), 0 0 100px rgba(143, 143, 106, 0.08);
         margin: 0 auto 1rem auto;
         transition: 0.4s;
-        animation:
-          float 7s ease-in-out infinite,
-          glowPulse 3s ease-in-out infinite;
+        animation: float 7s ease-in-out infinite, glowPulse 3s ease-in-out infinite;
         border: 4px solid rgba(255, 255, 255, 0.5);
         font-weight: 800;
         font-size: clamp(2.5rem, 8vw, 4.2rem);
@@ -1002,13 +970,7 @@
         position: absolute;
         inset: -8px;
         border-radius: 50%;
-        background: conic-gradient(
-          from 0deg,
-          #d4d4b0,
-          #b7b78a,
-          #e8e0d8,
-          #d4d4b0
-        );
+        background: conic-gradient(from 0deg, #d4d4b0, #b7b78a, #e8e0d8, #d4d4b0);
         z-index: -1;
         animation: spinGlow 6s linear infinite;
         opacity: 0.5;
@@ -1022,10 +984,7 @@
       .hero-logo:hover {
         transform: scale(1.08);
         border-color: white;
-        box-shadow:
-          0 0 50px rgba(143, 143, 106, 0.5),
-          0 0 100px rgba(143, 143, 106, 0.25),
-          0 0 150px rgba(143, 143, 106, 0.12);
+        box-shadow: 0 0 50px rgba(143, 143, 106, 0.5), 0 0 100px rgba(143, 143, 106, 0.25), 0 0 150px rgba(143, 143, 106, 0.12);
       }
       @keyframes spinGlow {
         0% {
@@ -1038,15 +997,10 @@
       @keyframes glowPulse {
         0%,
         100% {
-          box-shadow:
-            0 0 30px rgba(143, 143, 106, 0.3),
-            0 0 60px rgba(143, 143, 106, 0.15);
+          box-shadow: 0 0 30px rgba(143, 143, 106, 0.3), 0 0 60px rgba(143, 143, 106, 0.15);
         }
         50% {
-          box-shadow:
-            0 0 50px rgba(143, 143, 106, 0.5),
-            0 0 100px rgba(143, 143, 106, 0.25),
-            0 0 150px rgba(143, 143, 106, 0.12);
+          box-shadow: 0 0 50px rgba(143, 143, 106, 0.5), 0 0 100px rgba(143, 143, 106, 0.25), 0 0 150px rgba(143, 143, 106, 0.12);
         }
       }
       @keyframes float {
@@ -1111,11 +1065,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background: linear-gradient(
-          135deg,
-          rgba(143, 143, 106, 0.05),
-          transparent
-        );
+        background: linear-gradient(135deg, rgba(143, 143, 106, 0.05), transparent);
         opacity: 0;
         transition: 0.4s;
       }
@@ -1249,11 +1199,7 @@
         left: -50%;
         width: 200%;
         height: 200%;
-        background: radial-gradient(
-          circle at 30% 40%,
-          rgba(255, 255, 255, 0.15) 0%,
-          transparent 60%
-        );
+        background: radial-gradient(circle at 30% 40%, rgba(255, 255, 255, 0.15) 0%, transparent 60%);
         pointer-events: none;
         transition: 0.5s;
       }
@@ -1380,11 +1326,7 @@
         right: -15%;
         width: 300px;
         height: 300px;
-        background: radial-gradient(
-          circle,
-          rgba(143, 143, 106, 0.05),
-          transparent
-        );
+        background: radial-gradient(circle, rgba(143, 143, 106, 0.05), transparent);
         border-radius: 50%;
         pointer-events: none;
       }
@@ -1625,11 +1567,7 @@
         width: 32px;
         height: 32px;
         border-radius: 50%;
-        background: linear-gradient(
-          135deg,
-          rgba(143, 143, 106, 0.08),
-          rgba(183, 183, 138, 0.08)
-        );
+        background: linear-gradient(135deg, rgba(143, 143, 106, 0.08), rgba(183, 183, 138, 0.08));
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1666,11 +1604,7 @@
       .contact-card-simple .divider-light {
         width: 100%;
         height: 1px;
-        background: linear-gradient(
-          90deg,
-          rgba(143, 143, 106, 0.05),
-          rgba(183, 183, 138, 0.05)
-        );
+        background: linear-gradient(90deg, rgba(143, 143, 106, 0.05), rgba(183, 183, 138, 0.05));
         margin: 0.2rem 0;
       }
       .contact-card-simple .contact-badge-wrap {
@@ -1759,11 +1693,7 @@
         left: -50%;
         width: 200%;
         height: 200%;
-        background: radial-gradient(
-          circle,
-          rgba(255, 255, 255, 0.1),
-          transparent 60%
-        );
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent 60%);
         opacity: 0;
         transition: 0.5s;
       }
@@ -2336,11 +2266,7 @@
         right: -30%;
         width: 300px;
         height: 300px;
-        background: radial-gradient(
-          circle,
-          rgba(255, 255, 255, 0.05),
-          transparent
-        );
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.05), transparent);
         border-radius: 50%;
       }
       .resume-modal-header .badge-sp {
@@ -2523,11 +2449,7 @@
       .resume-modal-body .hr-custom {
         border: 0;
         height: 1px;
-        background: linear-gradient(
-          90deg,
-          rgba(143, 143, 106, 0.15),
-          rgba(183, 183, 138, 0.15)
-        );
+        background: linear-gradient(90deg, rgba(143, 143, 106, 0.15), rgba(183, 183, 138, 0.15));
         margin: 0.8rem 0;
       }
       .resume-modal-footer {
@@ -2816,11 +2738,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background: linear-gradient(
-          135deg,
-          rgba(143, 143, 106, 0.05),
-          transparent
-        );
+        background: linear-gradient(135deg, rgba(143, 143, 106, 0.05), transparent);
         opacity: 0;
         transition: 0.4s;
       }
@@ -3154,6 +3072,61 @@
           transform: scale(1);
         }
       }
+
+      /* ===== EXTRA MOBILE FIXES ===== */
+      .container-modern {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: max(1.2rem, env(safe-area-inset-left));
+        padding-right: max(1.2rem, env(safe-area-inset-right));
+      }
+      .row.g-4 {
+        --bs-gutter-y: 1.5rem;
+      }
+      .col-lg-6 {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+      }
+      @media (min-width: 992px) {
+        .col-lg-6 {
+          flex: 0 0 50%;
+          max-width: 50%;
+        }
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      .modal-dialog {
+        margin: 1.75rem auto;
+      }
+      @media (min-width: 576px) {
+        .modal-dialog {
+          max-width: 90%;
+        }
+      }
+      @media (min-width: 768px) {
+        .modal-dialog {
+          max-width: 80%;
+        }
+      }
+      @media (min-width: 992px) {
+        .modal-dialog {
+          max-width: 800px;
+        }
+      }
+      .modal-content {
+        border-radius: 24px;
+        overflow: hidden;
+      }
+      .cert-scroll-wrap {
+        direction: ltr;
+      }
+      .cert-scroll-inner {
+        direction: ltr;
+      }
     </style>
   </head>
   <body>
@@ -3180,61 +3153,34 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto align-items-lg-center">
             <li class="nav-item">
-              <a class="nav-link" href="#home" data-bs-dismiss="collapse"
-                >Home</a
-              >
+              <a class="nav-link" href="#home" data-bs-dismiss="collapse">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about" data-bs-dismiss="collapse"
-                >About</a
-              >
+              <a class="nav-link" href="#about" data-bs-dismiss="collapse">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skills" data-bs-dismiss="collapse"
-                >Skills</a
-              >
+              <a class="nav-link" href="#skills" data-bs-dismiss="collapse">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects" data-bs-dismiss="collapse"
-                >Projects</a
-              >
+              <a class="nav-link" href="#projects" data-bs-dismiss="collapse">Projects</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#certificates"
-                data-bs-dismiss="collapse"
-                >Certificates</a
-              >
+              <a class="nav-link" href="#certificates" data-bs-dismiss="collapse">Certificates</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#gallery" data-bs-dismiss="collapse"
-                >ITR Tasks</a
-              >
+              <a class="nav-link" href="#gallery" data-bs-dismiss="collapse">ITR Tasks</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#education" data-bs-dismiss="collapse"
-                >Education</a
-              >
+              <a class="nav-link" href="#education" data-bs-dismiss="collapse">Education</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact" data-bs-dismiss="collapse"
-                >Contact</a
-              >
+              <a class="nav-link" href="#contact" data-bs-dismiss="collapse">Contact</a>
             </li>
             <li class="nav-item ms-2">
-              <div
-                id="google_translate_element"
-                style="display: inline-block"
-              ></div>
+              <div id="google_translate_element" style="display: inline-block"></div>
             </li>
             <li class="nav-item">
-              <button
-                onclick="toggleTheme()"
-                class="theme-toggle-btn"
-                id="themeToggle"
-                aria-label="Toggle theme"
-              >
+              <button onclick="toggleTheme()" class="theme-toggle-btn" id="themeToggle" aria-label="Toggle theme">
                 <i class="bi bi-moon-fill"></i>
               </button>
             </li>
@@ -3255,32 +3201,16 @@
           <span class="gradient-text">Designer</span>
         </div>
         <div class="hero-tagline animate-fade-up delay-3">
-          <i class="bi bi-code-slash me-1"></i> First step into the world of
-          development
+          <i class="bi bi-code-slash me-1"></i> First step into the world of development
         </div>
-        <div
-          class="hero-buttons mt-4 d-flex flex-wrap justify-content-center gap-2 animate-fade-up delay-4"
-        >
-          <a href="#projects" class="btn btn-primary">
-            <i class="bi bi-eye me-1"></i> View My Work
-          </a>
-          <a href="#contact" class="btn btn-outline-light">
-            <i class="bi bi-envelope me-1"></i> Contact Me
-          </a>
-          <a
-            href="#"
-            class="btn btn-primary resume-hero-btn"
-            data-bs-toggle="modal"
-            data-bs-target="#resumeModal"
-            id="resumeHeroBtn"
-          >
+        <div class="hero-buttons mt-4 d-flex flex-wrap justify-content-center gap-2 animate-fade-up delay-4">
+          <a href="#projects" class="btn btn-primary"> <i class="bi bi-eye me-1"></i> View My Work </a>
+          <a href="#contact" class="btn btn-outline-light"> <i class="bi bi-envelope me-1"></i> Contact Me </a>
+          <a href="#" class="btn btn-primary resume-hero-btn" data-bs-toggle="modal" data-bs-target="#resumeModal" id="resumeHeroBtn">
             <i class="bi bi-file-earmark-pdf me-1"></i> My Resume
           </a>
         </div>
-        <div
-          class="mt-4 d-flex justify-content-center gap-4 small animate-fade-up delay-5"
-          style="color: #1a1a1a"
-        >
+        <div class="mt-4 d-flex justify-content-center gap-4 small animate-fade-up delay-5" style="color: #1a1a1a">
           <span><i class="bi bi-github"></i> GitHub</span>
           <span><i class="bi bi-award"></i> Projects</span>
         </div>
@@ -3294,30 +3224,18 @@
           <div data-aos="fade-right" data-aos-duration="800">
             <h2 class="section-title">About Me</h2>
             <p class="mt-4 fs-5" style="color: #1a1a1a; line-height: 1.7">
-              I'm <strong>Sanika Pise</strong> — a diploma student in Computer
-              Engineering at
-              <strong>Shivaji Polytechnic College, Sangola</strong>. Currently
-              in my <strong>third year</strong>, I'm deeply passionate about web
-              development, programming, and design. I believe in learning by
-              building, and I love turning ideas into real digital experiences.
+              I'm <strong>Sanika Pise</strong> — a diploma student in Computer Engineering at
+              <strong>Shivaji Polytechnic College, Sangola</strong>. Currently in my <strong>third year</strong>, I'm deeply
+              passionate about web development, programming, and design. I believe in learning by building, and I love turning
+              ideas into real digital experiences.
             </p>
             <div class="d-flex flex-wrap gap-2 mt-3">
-              <span class="badge-tech"
-                ><i class="bi bi-geo-alt me-1"></i> Sangola, India</span
-              >
-              <span class="badge-tech"
-                ><i class="bi bi-mortarboard me-1"></i> Diploma CSE (TY)</span
-              >
-              <span class="badge-tech"
-                ><i class="bi bi-heart me-1"></i> Web Dev & Design</span
-              >
+              <span class="badge-tech"><i class="bi bi-geo-alt me-1"></i> Sangola, India</span>
+              <span class="badge-tech"><i class="bi bi-mortarboard me-1"></i> Diploma CSE (TY)</span>
+              <span class="badge-tech"><i class="bi bi-heart me-1"></i> Web Dev & Design</span>
             </div>
             <div class="mt-4 d-flex gap-3 flex-wrap">
-              <a
-                href="#"
-                class="btn btn-outline-primary rounded-pill px-4"
-                style="color: #8f8f6a; border-color: #8f8f6a"
-              >
+              <a href="#" class="btn btn-outline-primary rounded-pill px-4" style="color: #8f8f6a; border-color: #8f8f6a">
                 <i class="bi bi-linkedin"></i> LinkedIn
               </a>
               <a href="#" class="btn btn-outline-dark rounded-pill px-4">
@@ -3338,99 +3256,58 @@
     <section id="skills" class="section-container-alt">
       <div class="container-modern">
         <h2 class="section-title mb-3" data-aos="fade-up">My Skills</h2>
-        <p
-          class="text-muted mb-4"
-          style="font-size: 1.05rem; text-align: center"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
+        <p class="text-muted mb-4" style="font-size: 1.05rem; text-align: center" data-aos="fade-up" data-aos-delay="100">
           The languages I have learned &amp; am learning.
         </p>
         <div class="skill-grid">
-          <div
-            class="skill-glass animate-scale delay-1"
-            data-aos="zoom-in"
-            data-aos-delay="100"
-          >
+          <div class="skill-glass animate-scale delay-1" data-aos="zoom-in" data-aos-delay="100">
             <div class="skill-label">
-              <span class="skill-name-wrap"
-                ><i class="bi bi-filetype-html skill-icon"></i>HTML</span
-              >
+              <span class="skill-name-wrap"><i class="bi bi-filetype-html skill-icon"></i>HTML</span>
               <span class="skill-percent">90%</span>
             </div>
             <div class="progress-track">
               <div class="progress-fill" style="--target: 90%"></div>
             </div>
           </div>
-          <div
-            class="skill-glass animate-scale delay-2"
-            data-aos="zoom-in"
-            data-aos-delay="200"
-          >
+          <div class="skill-glass animate-scale delay-2" data-aos="zoom-in" data-aos-delay="200">
             <div class="skill-label">
-              <span class="skill-name-wrap"
-                ><i class="bi bi-filetype-css skill-icon"></i>CSS</span
-              >
+              <span class="skill-name-wrap"><i class="bi bi-filetype-css skill-icon"></i>CSS</span>
               <span class="skill-percent">85%</span>
             </div>
             <div class="progress-track">
               <div class="progress-fill" style="--target: 85%"></div>
             </div>
           </div>
-          <div
-            class="skill-glass animate-scale delay-3"
-            data-aos="zoom-in"
-            data-aos-delay="300"
-          >
+          <div class="skill-glass animate-scale delay-3" data-aos="zoom-in" data-aos-delay="300">
             <div class="skill-label">
-              <span class="skill-name-wrap"
-                ><i class="bi bi-bootstrap skill-icon"></i>Bootstrap</span
-              >
+              <span class="skill-name-wrap"><i class="bi bi-bootstrap skill-icon"></i>Bootstrap</span>
               <span class="skill-percent">88%</span>
             </div>
             <div class="progress-track">
               <div class="progress-fill" style="--target: 88%"></div>
             </div>
           </div>
-          <div
-            class="skill-glass animate-scale delay-4"
-            data-aos="zoom-in"
-            data-aos-delay="400"
-          >
+          <div class="skill-glass animate-scale delay-4" data-aos="zoom-in" data-aos-delay="400">
             <div class="skill-label">
-              <span class="skill-name-wrap"
-                ><i class="bi bi-filetype-js skill-icon"></i>JavaScript</span
-              >
+              <span class="skill-name-wrap"><i class="bi bi-filetype-js skill-icon"></i>JavaScript</span>
               <span class="skill-percent">78%</span>
             </div>
             <div class="progress-track">
               <div class="progress-fill" style="--target: 78%"></div>
             </div>
           </div>
-          <div
-            class="skill-glass animate-scale delay-5"
-            data-aos="zoom-in"
-            data-aos-delay="500"
-          >
+          <div class="skill-glass animate-scale delay-5" data-aos="zoom-in" data-aos-delay="500">
             <div class="skill-label">
-              <span class="skill-name-wrap"
-                ><i class="bi bi-filetype-py skill-icon"></i>Python</span
-              >
+              <span class="skill-name-wrap"><i class="bi bi-filetype-py skill-icon"></i>Python</span>
               <span class="skill-percent">72%</span>
             </div>
             <div class="progress-track">
               <div class="progress-fill" style="--target: 72%"></div>
             </div>
           </div>
-          <div
-            class="skill-glass animate-scale delay-6"
-            data-aos="zoom-in"
-            data-aos-delay="600"
-          >
+          <div class="skill-glass animate-scale delay-6" data-aos="zoom-in" data-aos-delay="600">
             <div class="skill-label">
-              <span class="skill-name-wrap"
-                ><i class="bi bi-git skill-icon"></i>DBMS</span
-              >
+              <span class="skill-name-wrap"><i class="bi bi-git skill-icon"></i>DBMS</span>
               <span class="skill-percent">80%</span>
             </div>
             <div class="progress-track">
@@ -3439,10 +3316,7 @@
           </div>
         </div>
         <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="700">
-          <span class="badge-tech"
-            ><i class="bi bi-check-circle-fill text-success me-1"></i>
-            Responsive Design</span
-          >
+          <span class="badge-tech"><i class="bi bi-check-circle-fill text-success me-1"></i> Responsive Design</span>
         </div>
       </div>
     </section>
@@ -3451,107 +3325,66 @@
     <section id="projects" class="section-container bg-white">
       <div class="container-modern">
         <h2 class="section-title mb-4" data-aos="fade-up">My Projects</h2>
-        <p
-          class="text-muted mb-4"
-          style="font-size: 1.05rem"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
+        <p class="text-muted mb-4" style="font-size: 1.05rem" data-aos="fade-up" data-aos-delay="100">
           Click on any project card to explore.
         </p>
         <div class="row g-4">
-          <div
-            class="col-md-6 col-lg-3"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
             <div class="card-project" onclick="openProjectModal('calculator')">
               <div class="project-img text-center">
                 <i class="bi bi-calculator"></i>
               </div>
               <h5 class="fw-bold">Calculator</h5>
-              <p class="text-muted small">
-                Fully functional calculator with HTML, CSS &amp; JS.
-              </p>
+              <p class="text-muted small">Fully functional calculator with HTML, CSS &amp; JS.</p>
               <div>
                 <span class="badge-tech">HTML</span>
                 <span class="badge-tech">CSS</span>
                 <span class="badge-tech">JS</span>
               </div>
-              <span class="click-hint"
-                ><i class="bi bi-box-arrow-up-right me-1"></i>click to
-                open</span
-              >
+              <span class="click-hint"><i class="bi bi-box-arrow-up-right me-1"></i>click to open</span>
             </div>
           </div>
-          <div
-            class="col-md-6 col-lg-3"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
             <div class="card-project" onclick="openProjectModal('vacation')">
               <div class="project-img text-center">
                 <i class="bi bi-calendar-check"></i>
               </div>
               <h5 class="fw-bold">Vacation Request</h5>
-              <p class="text-muted small">
-                Professional vacation request form with Bootstrap.
-              </p>
+              <p class="text-muted small">Professional vacation request form with Bootstrap.</p>
               <div>
                 <span class="badge-tech">HTML</span>
                 <span class="badge-tech">Bootstrap</span>
               </div>
-              <span class="click-hint"
-                ><i class="bi bi-box-arrow-up-right me-1"></i>click to
-                open</span
-              >
+              <span class="click-hint"><i class="bi bi-box-arrow-up-right me-1"></i>click to open</span>
             </div>
           </div>
-          <div
-            class="col-md-6 col-lg-3"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
             <div class="card-project" onclick="openProjectModal('student')">
               <div class="project-img text-center">
                 <i class="bi bi-person-vcard"></i>
               </div>
               <h5 class="fw-bold">Student Registration</h5>
-              <p class="text-muted small">
-                Detailed student reg form with DOB, gender, hobbies &amp; more.
-              </p>
+              <p class="text-muted small">Detailed student reg form with DOB, gender, hobbies &amp; more.</p>
               <div>
                 <span class="badge-tech">HTML</span>
                 <span class="badge-tech">CSS</span>
               </div>
-              <span class="click-hint"
-                ><i class="bi bi-box-arrow-up-right me-1"></i>click to
-                open</span
-              >
+              <span class="click-hint"><i class="bi bi-box-arrow-up-right me-1"></i>click to open</span>
             </div>
           </div>
-          <div
-            class="col-md-6 col-lg-3"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
             <div class="card-project" onclick="openProjectModal('patient')">
               <div class="project-img text-center">
                 <i class="bi bi-clipboard2-pulse"></i>
               </div>
               <h5 class="fw-bold">Patient Registration</h5>
-              <p class="text-muted small">
-                Patient registration form with validation-ready fields.
-              </p>
+              <p class="text-muted small">Patient registration form with validation-ready fields.</p>
               <div>
                 <span class="badge-tech">HTML</span>
                 <span class="badge-tech">Bootstrap</span>
                 <span class="badge-tech">CSS</span>
               </div>
-              <span class="click-hint"
-                ><i class="bi bi-box-arrow-up-right me-1"></i>click to
-                open</span
-              >
+              <span class="click-hint"><i class="bi bi-box-arrow-up-right me-1"></i>click to open</span>
             </div>
           </div>
         </div>
@@ -3562,22 +3395,12 @@
     <section id="certificates" class="section-container-alt">
       <div class="container-modern">
         <h2 class="section-title mb-3" data-aos="fade-up">Certificates</h2>
-        <p
-          class="text-muted mb-4"
-          style="font-size: 1.05rem"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
+        <p class="text-muted mb-4" style="font-size: 1.05rem" data-aos="fade-up" data-aos-delay="100">
           Click any card to view certificate
         </p>
         <div class="cert-scroll-wrap">
           <div class="cert-scroll-inner">
-            <div
-              class="cert-card"
-              onclick="openCertModal(0)"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
+            <div class="cert-card" onclick="openCertModal(0)" data-aos="fade-up" data-aos-delay="100">
               <div class="cert-img-placeholder">
                 <img
                   src="image/work.png.jpeg"
@@ -3593,16 +3416,9 @@
               <div class="cert-title">AI Workshop</div>
               <div class="cert-org">iGAP Technologies</div>
               <div class="cert-date">19-21 Sep 2025</div>
-              <span class="click-hint-cert"
-                ><i class="bi bi-box-arrow-up-right me-1"></i>click</span
-              >
+              <span class="click-hint-cert"><i class="bi bi-box-arrow-up-right me-1"></i>click</span>
             </div>
-            <div
-              class="cert-card"
-              onclick="openCertModal(1)"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
+            <div class="cert-card" onclick="openCertModal(1)" data-aos="fade-up" data-aos-delay="200">
               <div class="cert-img-placeholder">
                 <img
                   src="image/draw.png.jpeg"
@@ -3618,16 +3434,9 @@
               <div class="cert-title">Drawing Grade Exam</div>
               <div class="cert-org">Govt. of Maharashtra</div>
               <div class="cert-date">31 Jan 2024</div>
-              <span class="click-hint-cert"
-                ><i class="bi bi-box-arrow-up-right me-1"></i>click</span
-              >
+              <span class="click-hint-cert"><i class="bi bi-box-arrow-up-right me-1"></i>click</span>
             </div>
-            <div
-              class="cert-card"
-              onclick="openCertModal(2)"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
+            <div class="cert-card" onclick="openCertModal(2)" data-aos="fade-up" data-aos-delay="300">
               <div class="cert-img-placeholder">
                 <img
                   src="image/lang.png.jpeg"
@@ -3643,16 +3452,9 @@
               <div class="cert-title">C Programming</div>
               <div class="cert-org">Codexlabz</div>
               <div class="cert-date">14-16 Mar 2025</div>
-              <span class="click-hint-cert"
-                ><i class="bi bi-box-arrow-up-right me-1"></i>click</span
-              >
+              <span class="click-hint-cert"><i class="bi bi-box-arrow-up-right me-1"></i>click</span>
             </div>
-            <div
-              class="cert-card"
-              onclick="openCertModal(3)"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
+            <div class="cert-card" onclick="openCertModal(3)" data-aos="fade-up" data-aos-delay="400">
               <div class="cert-img-placeholder">
                 <img
                   src="image/ccc.png.jpeg"
@@ -3668,16 +3470,9 @@
               <div class="cert-title">NIELIT CCC</div>
               <div class="cert-org">NIELIT</div>
               <div class="cert-date">04 Sep 2024</div>
-              <span class="click-hint-cert"
-                ><i class="bi bi-box-arrow-up-right me-1"></i>click</span
-              >
+              <span class="click-hint-cert"><i class="bi bi-box-arrow-up-right me-1"></i>click</span>
             </div>
-            <div
-              class="cert-card"
-              onclick="openCertModal(4)"
-              data-aos="fade-up"
-              data-aos-delay="500"
-            >
+            <div class="cert-card" onclick="openCertModal(4)" data-aos="fade-up" data-aos-delay="500">
               <div class="cert-img-placeholder">
                 <img
                   src="image/cer.png.jpeg"
@@ -3693,16 +3488,12 @@
               <div class="cert-title">Quiz Buzz</div>
               <div class="cert-org">Shivaji Polytechnic</div>
               <div class="cert-date">28 Sep 2024</div>
-              <span class="click-hint-cert"
-                ><i class="bi bi-box-arrow-up-right me-1"></i>click</span
-              >
+              <span class="click-hint-cert"><i class="bi bi-box-arrow-up-right me-1"></i>click</span>
             </div>
           </div>
         </div>
         <div class="text-center mt-2" data-aos="fade-up" data-aos-delay="600">
-          <span class="badge-tech" style="font-size: 0.7rem">
-            <i class="bi bi-arrow-left me-1"></i> swipe to see more
-          </span>
+          <span class="badge-tech" style="font-size: 0.7rem"> <i class="bi bi-arrow-left me-1"></i> swipe to see more </span>
         </div>
       </div>
     </section>
@@ -3710,63 +3501,21 @@
     <!-- ===== CERTIFICATE MODAL ===== -->
     <div class="modal fade" id="certModal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div
-          class="modal-content"
-          style="
-            border-radius: 24px;
-            overflow: hidden;
-            background: #ffffff;
-            border: none;
-          "
-        >
-          <div
-            class="modal-header border-0"
-            style="padding: 1rem 1.5rem 0.3rem"
-          >
-            <h5
-              class="modal-title fw-bold"
-              id="certModalTitle"
-              style="color: #1a1a1a; font-size: 1.1rem"
-            >
-              Certificate
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-            ></button>
+        <div class="modal-content" style="border-radius: 24px; overflow: hidden; background: #ffffff; border: none">
+          <div class="modal-header border-0" style="padding: 1rem 1.5rem 0.3rem">
+            <h5 class="modal-title fw-bold" id="certModalTitle" style="color: #1a1a1a; font-size: 1.1rem">Certificate</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
           <div class="modal-body" style="padding: 0.3rem 1.5rem 1.5rem">
-            <img
-              id="certModalImg"
-              src=""
-              alt="Certificate"
-              class="cert-modal-img"
-            />
+            <img id="certModalImg" src="" alt="Certificate" class="cert-modal-img" />
             <div class="cert-details">
-              <p
-                id="certModalOrg"
-                class="fw-semibold"
-                style="color: #8f8f6a; font-size: 0.85rem; margin: 0.2rem 0"
-              ></p>
-              <p
-                id="certModalDate"
-                class="text-muted"
-                style="font-size: 0.75rem; margin: 0"
-              ></p>
-              <p
-                id="certModalCounter"
-                class="cert-counter"
-                style="justify-content: center; margin-top: 0.2rem"
-              ></p>
+              <p id="certModalOrg" class="fw-semibold" style="color: #8f8f6a; font-size: 0.85rem; margin: 0.2rem 0"></p>
+              <p id="certModalDate" class="text-muted" style="font-size: 0.75rem; margin: 0"></p>
+              <p id="certModalCounter" class="cert-counter" style="justify-content: center; margin-top: 0.2rem"></p>
             </div>
             <div class="cert-modal-nav">
-              <button id="certPrevBtn" onclick="navigateCert(-1)">
-                <i class="bi bi-chevron-left me-1"></i> Previous
-              </button>
-              <button id="certNextBtn" onclick="navigateCert(1)">
-                Next <i class="bi bi-chevron-right ms-1"></i>
-              </button>
+              <button id="certPrevBtn" onclick="navigateCert(-1)"><i class="bi bi-chevron-left me-1"></i> Previous</button>
+              <button id="certNextBtn" onclick="navigateCert(1)">Next <i class="bi bi-chevron-right ms-1"></i></button>
             </div>
           </div>
         </div>
@@ -3781,8 +3530,7 @@
             <div>
               <h2 class="section-title mb-2">ITR Practical Tasks</h2>
               <p class="text-muted" style="font-size: 0.95rem">
-                A glimpse of my internship work — click any image to view full
-                size.
+                A glimpse of my internship work — click any image to view full size.
               </p>
             </div>
             <div class="task-stats">
@@ -3815,17 +3563,13 @@
               >
                 <div class="gallery-img-wrap">
                   <img src="image/calc.png" alt="Calculator" loading="lazy" />
-                  <span class="click-hint-gallery"
-                    ><i class="bi bi-search"></i> Click to view</span
-                  >
+                  <span class="click-hint-gallery"><i class="bi bi-search"></i> Click to view</span>
                 </div>
                 <div class="gallery-body">
                   <div class="gallery-title">
                     <span>Calculator</span><span class="badge-num">#01</span>
                   </div>
-                  <p class="gallery-desc">
-                    Fully functional calculator with arithmetic operations
-                  </p>
+                  <p class="gallery-desc">Fully functional calculator with arithmetic operations</p>
                   <div class="gallery-tags">
                     <span>HTML</span><span>CSS</span><span>JavaScript</span>
                   </div>
@@ -3843,23 +3587,14 @@
                 "
               >
                 <div class="gallery-img-wrap">
-                  <img
-                    src="image/dis.png"
-                    alt="Discount Calculator"
-                    loading="lazy"
-                  />
-                  <span class="click-hint-gallery"
-                    ><i class="bi bi-search"></i> Click to view</span
-                  >
+                  <img src="image/dis.png" alt="Discount Calculator" loading="lazy" />
+                  <span class="click-hint-gallery"><i class="bi bi-search"></i> Click to view</span>
                 </div>
                 <div class="gallery-body">
                   <div class="gallery-title">
-                    <span>Discount Calculator</span
-                    ><span class="badge-num">#02</span>
+                    <span>Discount Calculator</span><span class="badge-num">#02</span>
                   </div>
-                  <p class="gallery-desc">
-                    Calculate discounts and final prices instantly
-                  </p>
+                  <p class="gallery-desc">Calculate discounts and final prices instantly</p>
                   <div class="gallery-tags">
                     <span>HTML</span><span>CSS</span><span>JavaScript</span>
                   </div>
@@ -3877,23 +3612,14 @@
                 "
               >
                 <div class="gallery-img-wrap">
-                  <img
-                    src="image/reg.png"
-                    alt="Registration Form"
-                    loading="lazy"
-                  />
-                  <span class="click-hint-gallery"
-                    ><i class="bi bi-search"></i> Click to view</span
-                  >
+                  <img src="image/reg.png" alt="Registration Form" loading="lazy" />
+                  <span class="click-hint-gallery"><i class="bi bi-search"></i> Click to view</span>
                 </div>
                 <div class="gallery-body">
                   <div class="gallery-title">
-                    <span>Registration Form</span
-                    ><span class="badge-num">#03</span>
+                    <span>Registration Form</span><span class="badge-num">#03</span>
                   </div>
-                  <p class="gallery-desc">
-                    User registration with validation and styling
-                  </p>
+                  <p class="gallery-desc">User registration with validation and styling</p>
                   <div class="gallery-tags">
                     <span>HTML</span><span>CSS</span><span>Bootstrap</span>
                   </div>
@@ -3912,9 +3638,7 @@
               >
                 <div class="gallery-img-wrap">
                   <img src="image/ama.png" alt="Amazon Cart" loading="lazy" />
-                  <span class="click-hint-gallery"
-                    ><i class="bi bi-search"></i> Click to view</span
-                  >
+                  <span class="click-hint-gallery"><i class="bi bi-search"></i> Click to view</span>
                 </div>
                 <div class="gallery-body">
                   <div class="gallery-title">
@@ -3943,18 +3667,13 @@
                     alt="Portfolio Website"
                     loading="lazy"
                   />
-                  <span class="click-hint-gallery"
-                    ><i class="bi bi-search"></i> Click to view</span
-                  >
+                  <span class="click-hint-gallery"><i class="bi bi-search"></i> Click to view</span>
                 </div>
                 <div class="gallery-body">
                   <div class="gallery-title">
-                    <span>Portfolio Website</span
-                    ><span class="badge-num">#05</span>
+                    <span>Portfolio Website</span><span class="badge-num">#05</span>
                   </div>
-                  <p class="gallery-desc">
-                    Personal portfolio with modern design
-                  </p>
+                  <p class="gallery-desc">Personal portfolio with modern design</p>
                   <div class="gallery-tags">
                     <span>HTML</span><span>CSS</span><span>Bootstrap</span>
                   </div>
@@ -3963,9 +3682,7 @@
             </div>
           </div>
           <div class="text-center mt-2">
-            <span class="badge-tech" style="font-size: 0.65rem"
-              ><i class="bi bi-arrow me-1"></i> swipe to see more</span
-            >
+            <span class="badge-tech" style="font-size: 0.65rem"><i class="bi bi-arrow me-1"></i> swipe to see more</span>
           </div>
         </div>
       </div>
@@ -3974,44 +3691,14 @@
     <!-- ===== IMAGE MODAL ===== -->
     <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div
-          class="modal-content"
-          style="
-            border-radius: 24px;
-            overflow: hidden;
-            background: #ffffff;
-            border: none;
-          "
-        >
-          <div
-            class="modal-header border-0"
-            style="padding: 1rem 1.5rem 0.3rem"
-          >
-            <h5
-              class="modal-title fw-bold"
-              id="imageModalTitle"
-              style="color: #1a1a1a; font-size: 1.1rem"
-            >
-              Image
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-            ></button>
+        <div class="modal-content" style="border-radius: 24px; overflow: hidden; background: #ffffff; border: none">
+          <div class="modal-header border-0" style="padding: 1rem 1.5rem 0.3rem">
+            <h5 class="modal-title fw-bold" id="imageModalTitle" style="color: #1a1a1a; font-size: 1.1rem">Image</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
           <div class="modal-body" style="padding: 0.3rem 1.5rem 1.5rem">
-            <img
-              id="imageModalImg"
-              src=""
-              alt="Task Image"
-              class="image-modal-img"
-            />
-            <p
-              id="imageModalDesc"
-              class="image-modal-desc mt-2"
-              style="color: #777; font-size: 0.85rem"
-            ></p>
+            <img id="imageModalImg" src="" alt="Task Image" class="image-modal-img" />
+            <p id="imageModalDesc" class="image-modal-desc mt-2" style="color: #777; font-size: 0.85rem"></p>
             <div id="imageModalTags" class="d-flex flex-wrap gap-1 mt-2"></div>
           </div>
         </div>
@@ -4022,12 +3709,7 @@
     <section id="education" class="section-container bg-white">
       <div class="container-modern">
         <h2 class="section-title mb-4" data-aos="fade-up">Education</h2>
-        <p
-          class="text-muted mb-4"
-          style="font-size: 1.05rem"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
+        <p class="text-muted mb-4" style="font-size: 1.05rem" data-aos="fade-up" data-aos-delay="100">
           Hover over a card to flip and see details.
         </p>
         <div class="edu-flip-grid">
@@ -4040,31 +3722,22 @@
                   <h5>Secondary School Certificate</h5>
                   <div class="institute">Shivane madhymik vidyalay Shivane</div>
                   <div class="mt-2 d-flex justify-content-between">
-                    <span class="year-badge"
-                      ><i class="bi bi-calendar-event me-1"></i>2023</span
-                    >
+                    <span class="year-badge"><i class="bi bi-calendar-event me-1"></i>2023</span>
                     <span class="status-badge completed">Completed</span>
                   </div>
-                  <div class="flip-hint">
-                    <i class="bi bi-arrow-repeat me-1"></i>hover to flip
-                  </div>
+                  <div class="flip-hint"><i class="bi bi-arrow-repeat me-1"></i>hover to flip</div>
                 </div>
                 <div class="flip-card-back">
-                  <h6 class="fw-bold mb-3">
-                    <i class="bi bi-card-list me-2"></i>Details
-                  </h6>
+                  <h6 class="fw-bold mb-3"><i class="bi bi-card-list me-2"></i>Details</h6>
                   <ul>
                     <li>
-                      <span class="label">Board</span
-                      ><span class="value">Maharashtra State Board</span>
+                      <span class="label">Board</span><span class="value">Maharashtra State Board</span>
                     </li>
                     <li>
-                      <span class="label">Percentage</span
-                      ><span class="value">84%</span>
+                      <span class="label">Percentage</span><span class="value">84%</span>
                     </li>
                     <li>
-                      <span class="label">Passing Year</span
-                      ><span class="value">2023</span>
+                      <span class="label">Passing Year</span><span class="value">2023</span>
                     </li>
                   </ul>
                 </div>
@@ -4078,40 +3751,27 @@
                   <div class="icon-big"><i class="bi bi-laptop"></i></div>
                   <span class="badge">Diploma CSE</span>
                   <h5>First &amp; Second Year</h5>
-                  <div class="institute">
-                    Shivaji Polytechnic College, Sangola
-                  </div>
+                  <div class="institute">Shivaji Polytechnic College, Sangola</div>
                   <div class="mt-2 d-flex justify-content-between">
-                    <span class="year-badge"
-                      ><i class="bi bi-calendar-event me-1"></i>2024 -
-                      2026</span
-                    >
+                    <span class="year-badge"><i class="bi bi-calendar-event me-1"></i>2024 - 2026</span>
                     <span class="status-badge completed">Completed</span>
                   </div>
-                  <div class="flip-hint">
-                    <i class="bi bi-arrow-repeat me-1"></i>hover to flip
-                  </div>
+                  <div class="flip-hint"><i class="bi bi-arrow-repeat me-1"></i>hover to flip</div>
                 </div>
                 <div class="flip-card-back">
-                  <h6 class="fw-bold mb-3">
-                    <i class="bi bi-card-list me-2"></i>Details
-                  </h6>
+                  <h6 class="fw-bold mb-3"><i class="bi bi-card-list me-2"></i>Details</h6>
                   <ul>
                     <li>
-                      <span class="label">Board</span
-                      ><span class="value">MSBTE</span>
+                      <span class="label">Board</span><span class="value">MSBTE</span>
                     </li>
                     <li>
-                      <span class="label">FY %</span
-                      ><span class="value">84%</span>
+                      <span class="label">FY %</span><span class="value">84%</span>
                     </li>
                     <li>
-                      <span class="label">SY %</span
-                      ><span class="value">80%</span>
+                      <span class="label">SY %</span><span class="value">80%</span>
                     </li>
                     <li>
-                      <span class="label">Year</span
-                      ><span class="value">2024-2026</span>
+                      <span class="label">Year</span><span class="value">2024-2026</span>
                     </li>
                   </ul>
                 </div>
@@ -4125,36 +3785,24 @@
                   <div class="icon-big"><i class="bi bi-mortarboard"></i></div>
                   <span class="badge">Diploma CSE</span>
                   <h5>Third Year (TY)</h5>
-                  <div class="institute">
-                    Shivaji Polytechnic College, Sangola
-                  </div>
+                  <div class="institute">Shivaji Polytechnic College, Sangola</div>
                   <div class="mt-2 d-flex justify-content-between">
-                    <span class="year-badge"
-                      ><i class="bi bi-calendar-event me-1"></i>2026 -
-                      2027</span
-                    >
+                    <span class="year-badge"><i class="bi bi-calendar-event me-1"></i>2026 - 2027</span>
                     <span class="status-badge pursuing">Pursuing</span>
                   </div>
-                  <div class="flip-hint">
-                    <i class="bi bi-arrow-repeat me-1"></i>hover to flip
-                  </div>
+                  <div class="flip-hint"><i class="bi bi-arrow-repeat me-1"></i>hover to flip</div>
                 </div>
                 <div class="flip-card-back">
-                  <h6 class="fw-bold mb-3">
-                    <i class="bi bi-card-list me-2"></i>Details
-                  </h6>
+                  <h6 class="fw-bold mb-3"><i class="bi bi-card-list me-2"></i>Details</h6>
                   <ul>
                     <li>
-                      <span class="label">Board</span
-                      ><span class="value">MSBTE</span>
+                      <span class="label">Board</span><span class="value">MSBTE</span>
                     </li>
                     <li>
-                      <span class="label">Status</span
-                      ><span class="value">Pursuing</span>
+                      <span class="label">Status</span><span class="value">Pursuing</span>
                     </li>
                     <li>
-                      <span class="label">Year</span
-                      ><span class="value">2026-2027</span>
+                      <span class="label">Year</span><span class="value">2026-2027</span>
                     </li>
                   </ul>
                 </div>
@@ -4169,17 +3817,11 @@
     <section id="contact" class="section-container-alt">
       <div class="container-modern">
         <div class="row g-4 align-items-stretch">
-          <div
-            class="col-lg-6 d-flex flex-column"
-            data-aos="fade-right"
-            data-aos-duration="800"
-          >
-            <h2 class="section-title mb-3" style="font-size: clamp(1.3rem, 4vw, 1.8rem)">
-              Get in Touch
-            </h2>
+          <div class="col-lg-6 d-flex flex-column" data-aos="fade-right" data-aos-duration="800">
+            <h2 class="section-title mb-3" style="font-size: clamp(1.3rem, 4vw, 1.8rem)">Get in Touch</h2>
             <p class="text-muted mb-3" style="font-size: 0.85rem">
-              I'm always open to new ideas, collaborations, or just a friendly
-              chat. Reach out through any of the channels below.
+              I'm always open to new ideas, collaborations, or just a friendly chat. Reach out through any of the channels
+              below.
             </p>
             <div class="contact-card-simple flex-grow-1">
               <div class="contact-item">
@@ -4204,9 +3846,7 @@
                 </div>
               </div>
               <div class="contact-item">
-                <div class="icon-wrap">
-                  <i class="bi bi-calendar-event"></i>
-                </div>
+                <div class="icon-wrap"><i class="bi bi-calendar-event"></i></div>
                 <div class="info">
                   <span class="label">Availability</span>
                   <span class="value">Open to internships &amp; projects</span>
@@ -4214,24 +3854,13 @@
               </div>
               <div class="divider-light"></div>
               <div class="contact-badge-wrap">
-                <span class="badge-simple"
-                  ><i class="bi bi-check-circle-fill text-success me-1"></i>
-                  Available</span
-                >
-                <span class="badge-simple"
-                  ><i class="bi bi-clock me-1"></i> IST</span
-                >
-                <span class="badge-simple"
-                  ><i class="bi bi-reply-all me-1"></i> Response in 24h</span
-                >
+                <span class="badge-simple"><i class="bi bi-check-circle-fill text-success me-1"></i> Available</span>
+                <span class="badge-simple"><i class="bi bi-clock me-1"></i> IST</span>
+                <span class="badge-simple"><i class="bi bi-reply-all me-1"></i> Response in 24h</span>
               </div>
             </div>
           </div>
-          <div
-            class="col-lg-6 d-flex"
-            data-aos="fade-left"
-            data-aos-duration="800"
-          >
+          <div class="col-lg-6 d-flex" data-aos="fade-left" data-aos-duration="800">
             <div class="orbit-contact-form w-100">
               <h5
                 class="fw-bold mb-3"
@@ -4243,17 +3872,10 @@
                   font-size: clamp(0.95rem, 2vw, 1.1rem);
                 "
               >
-                <i
-                  class="bi bi-send"
-                  style="color: #8f8f6a; font-size: 1.2rem"
-                ></i>
+                <i class="bi bi-send" style="color: #8f8f6a; font-size: 1.2rem"></i>
                 <span style="color: #000000 !important">Send a Message</span>
               </h5>
-              <form
-                id="contactForm"
-                onsubmit="return handleContactForm(event);"
-                style="flex: 1; display: flex; flex-direction: column"
-              >
+              <form id="contactForm" onsubmit="return handleContactForm(event);" style="flex: 1; display: flex; flex-direction: column">
                 <div class="mb-2">
                   <label
                     style="
@@ -4434,30 +4056,14 @@
     </section>
 
     <!-- ===== RESUME MODAL (with custom close button) ===== -->
-    <div
-      class="modal fade resume-modal"
-      id="resumeModal"
-      tabindex="-1"
-      aria-hidden="true"
-    >
+    <div class="modal fade resume-modal" id="resumeModal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div
-          class="modal-content"
-          style="border-radius: 20px; overflow: hidden; background: #ffffff"
-        >
+        <div class="modal-content" style="border-radius: 20px; overflow: hidden; background: #ffffff">
           <div class="resume-modal-header">
-            <button
-              type="button"
-              class="btn-close-resume"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            >
+            <button type="button" class="btn-close-resume" data-bs-dismiss="modal" aria-label="Close">
               <i class="bi bi-x-lg"></i>
             </button>
-            <div class="badge-sp">
-              <i class="bi bi-star-fill me-1" style="font-size: 0.6rem"></i>
-              Diploma Student · CSE
-            </div>
+            <div class="badge-sp"><i class="bi bi-star-fill me-1" style="font-size: 0.6rem"></i> Diploma Student · CSE</div>
             <h1>Sanika Pise</h1>
             <h2>Computer Engineering · Web Enthusiast</h2>
             <div class="header-divider"></div>
@@ -4468,182 +4074,92 @@
             </div>
           </div>
           <div class="resume-modal-body">
-            <div class="section-title-resume">
-              <i class="bi bi-bullseye"></i> Career Objective
-            </div>
+            <div class="section-title-resume"><i class="bi bi-bullseye"></i> Career Objective</div>
             <p class="profile-text">
               To build a successful career in the field of
-              <strong>Computer Science and Engineering</strong>. Seeking an
-              internship opportunity to apply my technical knowledge, develop
-              practical skills, and gain valuable industry experience.
-              Passionate about web development, design, and problem-solving.
+              <strong>Computer Science and Engineering</strong>. Seeking an internship opportunity to apply my technical
+              knowledge, develop practical skills, and gain valuable industry experience. Passionate about web development,
+              design, and problem-solving.
             </p>
             <div class="hr-custom"></div>
-            <div class="section-title-resume">
-              <i class="bi bi-person-circle"></i> Personal Information
-            </div>
+            <div class="section-title-resume"><i class="bi bi-person-circle"></i> Personal Information</div>
             <div class="info-grid">
-              <div class="info-item">
-                <i class="bi bi-person"></i> Sanika Sharad Pise
-              </div>
-              <div class="info-item">
-                <i class="bi bi-envelope"></i> sanikapise19@gmail.com
-              </div>
-              <div class="info-item">
-                <i class="bi bi-phone"></i> +91 8446785610
-              </div>
-              <div class="info-item">
-                <i class="bi bi-calendar3"></i> 19 Feb 2009
-              </div>
-              <div class="info-item">
-                <i class="bi bi-geo-alt"></i> Shivaji Polytechnic, Sangola
-              </div>
-              <div class="info-item">
-                <i class="bi bi-gender-ambiguous"></i> Female
-              </div>
+              <div class="info-item"><i class="bi bi-person"></i> Sanika Sharad Pise</div>
+              <div class="info-item"><i class="bi bi-envelope"></i> sanikapise19@gmail.com</div>
+              <div class="info-item"><i class="bi bi-phone"></i> +91 8446785610</div>
+              <div class="info-item"><i class="bi bi-calendar3"></i> 19 Feb 2009</div>
+              <div class="info-item"><i class="bi bi-geo-alt"></i> Shivaji Polytechnic, Sangola</div>
+              <div class="info-item"><i class="bi bi-gender-ambiguous"></i> Female</div>
             </div>
             <div class="hr-custom"></div>
-            <div class="section-title-resume">
-              <i class="bi bi-code-square"></i> Technical Skills
-            </div>
+            <div class="section-title-resume"><i class="bi bi-code-square"></i> Technical Skills</div>
             <div style="display: flex; flex-wrap: wrap; gap: 0.15rem">
-              <span class="skill-tag-resume"
-                ><i class="bi bi-filetype-c"></i> C Programming</span
-              >
-              <span class="skill-tag-resume"
-                ><i class="bi bi-filetype-html"></i> HTML5</span
-              >
-              <span class="skill-tag-resume"
-                ><i class="bi bi-filetype-css"></i> CSS3</span
-              >
-              <span class="skill-tag-resume"
-                ><i class="bi bi-bootstrap"></i> Bootstrap</span
-              >
-              <span class="skill-tag-resume"
-                ><i class="bi bi-filetype-js"></i> JavaScript</span
-              >
-              <span class="skill-tag-resume"
-                ><i class="bi bi-file-earmark-word"></i> MS Word</span
-              >
-              <span class="skill-tag-resume"
-                ><i class="bi bi-file-earmark-excel"></i> MS Excel</span
-              >
-              <span class="skill-tag-resume"
-                ><i class="bi bi-palette"></i> Figma (basic)</span
-              >
+              <span class="skill-tag-resume"><i class="bi bi-filetype-c"></i> C Programming</span>
+              <span class="skill-tag-resume"><i class="bi bi-filetype-html"></i> HTML5</span>
+              <span class="skill-tag-resume"><i class="bi bi-filetype-css"></i> CSS3</span>
+              <span class="skill-tag-resume"><i class="bi bi-bootstrap"></i> Bootstrap</span>
+              <span class="skill-tag-resume"><i class="bi bi-filetype-js"></i> JavaScript</span>
+              <span class="skill-tag-resume"><i class="bi bi-file-earmark-word"></i> MS Word</span>
+              <span class="skill-tag-resume"><i class="bi bi-file-earmark-excel"></i> MS Excel</span>
+              <span class="skill-tag-resume"><i class="bi bi-palette"></i> Figma (basic)</span>
             </div>
             <div class="hr-custom"></div>
-            <div class="section-title-resume">
-              <i class="bi bi-mortarboard"></i> Education
-            </div>
+            <div class="section-title-resume"><i class="bi bi-mortarboard"></i> Education</div>
             <div class="edu-row">
               <div class="edu-left">
-                <span class="edu-title"
-                  ><i class="bi bi-book me-2" style="color: #8f8f6a"></i
-                  >SSC</span
-                >
-                <span class="edu-institute"
-                  >Shivane Madhyamik Vidyalay, Shivane</span
-                >
+                <span class="edu-title"><i class="bi bi-book me-2" style="color: #8f8f6a"></i>SSC</span>
+                <span class="edu-institute">Shivane Madhyamik Vidyalay, Shivane</span>
               </div>
               <div class="edu-right">
                 <div class="edu-year">Maharashtra State Board · 2023</div>
-                <div class="edu-percent">
-                  84% <span class="badge-completed ms-1">Completed</span>
-                </div>
+                <div class="edu-percent">84% <span class="badge-completed ms-1">Completed</span></div>
               </div>
             </div>
             <div class="edu-row">
               <div class="edu-left">
-                <span class="edu-title"
-                  ><i class="bi bi-laptop me-2" style="color: #8f8f6a"></i
-                  >Diploma in Computer Engineering</span
-                >
-                <span class="edu-institute"
-                  >Shivaji Polytechnic College, Sangola</span
-                >
+                <span class="edu-title"><i class="bi bi-laptop me-2" style="color: #8f8f6a"></i>Diploma in Computer Engineering</span>
+                <span class="edu-institute">Shivaji Polytechnic College, Sangola</span>
               </div>
               <div class="edu-right">
                 <div class="edu-year">MSBTE · 2024 – 2026</div>
-                <div class="edu-percent">
-                  FY: 84% · SY: 80%
-                  <span class="badge-completed ms-1">Completed</span>
-                </div>
+                <div class="edu-percent">FY: 84% · SY: 80% <span class="badge-completed ms-1">Completed</span></div>
               </div>
             </div>
             <div class="edu-row">
               <div class="edu-left">
-                <span class="edu-title"
-                  ><i class="bi bi-mortarboard me-2" style="color: #8f8f6a"></i
-                  >Diploma (TY) – Computer Engineering</span
-                >
-                <span class="edu-institute"
-                  >Shivaji Polytechnic College, Sangola</span
-                >
+                <span class="edu-title"><i class="bi bi-mortarboard me-2" style="color: #8f8f6a"></i>Diploma (TY) – Computer Engineering</span>
+                <span class="edu-institute">Shivaji Polytechnic College, Sangola</span>
               </div>
               <div class="edu-right">
                 <div class="edu-year">MSBTE · 2026 – 2027</div>
-                <div class="edu-percent">
-                  TY Student <span class="badge-pursuing ms-1">Pursuing</span>
-                </div>
+                <div class="edu-percent">TY Student <span class="badge-pursuing ms-1">Pursuing</span></div>
               </div>
             </div>
             <div class="hr-custom"></div>
-            <div class="section-title-resume">
-              <i class="bi bi-heart"></i> Interests &amp; Hobbies
-            </div>
+            <div class="section-title-resume"><i class="bi bi-heart"></i> Interests &amp; Hobbies</div>
             <div style="display: flex; flex-wrap: wrap; gap: 0.3rem">
-              <span
-                class="skill-tag-resume"
-                style="
-                  background: rgba(253, 121, 168, 0.06);
-                  border-color: rgba(253, 121, 168, 0.1);
-                "
+              <span class="skill-tag-resume" style="background: rgba(253, 121, 168, 0.06); border-color: rgba(253, 121, 168, 0.1)"
                 ><i class="bi bi-code"></i> Web Development</span
               >
-              <span
-                class="skill-tag-resume"
-                style="
-                  background: rgba(253, 121, 168, 0.06);
-                  border-color: rgba(253, 121, 168, 0.1);
-                "
+              <span class="skill-tag-resume" style="background: rgba(253, 121, 168, 0.06); border-color: rgba(253, 121, 168, 0.1)"
                 ><i class="bi bi-palette"></i> UI/UX Design</span
               >
-              <span
-                class="skill-tag-resume"
-                style="
-                  background: rgba(253, 121, 168, 0.06);
-                  border-color: rgba(253, 121, 168, 0.1);
-                "
+              <span class="skill-tag-resume" style="background: rgba(253, 121, 168, 0.06); border-color: rgba(253, 121, 168, 0.1)"
                 ><i class="bi bi-book"></i> Reading</span
               >
-              <span
-                class="skill-tag-resume"
-                style="
-                  background: rgba(253, 121, 168, 0.06);
-                  border-color: rgba(253, 121, 168, 0.1);
-                "
+              <span class="skill-tag-resume" style="background: rgba(253, 121, 168, 0.06); border-color: rgba(253, 121, 168, 0.1)"
                 ><i class="bi bi-music-note"></i> Music</span
               >
-              <span
-                class="skill-tag-resume"
-                style="
-                  background: rgba(253, 121, 168, 0.06);
-                  border-color: rgba(253, 121, 168, 0.1);
-                "
+              <span class="skill-tag-resume" style="background: rgba(253, 121, 168, 0.06); border-color: rgba(253, 121, 168, 0.1)"
                 ><i class="bi bi-trophy"></i> Hackathons</span
               >
             </div>
           </div>
           <div class="resume-modal-footer">
             <div>
-              <button onclick="window.print()" class="btn-print">
-                <i class="bi bi-download me-1"></i> Print PDF
-              </button>
+              <button onclick="window.print()" class="btn-print"><i class="bi bi-download me-1"></i> Print PDF</button>
             </div>
-            <div class="footer-text">
-              <i class="bi bi-person-circle me-1"></i> Sanika Pise &copy; 2026
-            </div>
+            <div class="footer-text"><i class="bi bi-person-circle me-1"></i> Sanika Pise &copy; 2026</div>
           </div>
         </div>
       </div>
@@ -4658,26 +4174,18 @@
         </p>
         <p class="mb-0 small text-muted">
           Built with Bootstrap 5 &amp; Inter —
-          <a href="#" class="text-decoration-none"
-            >Back to top <i class="bi bi-arrow-up"></i
-          ></a>
+          <a href="#" class="text-decoration-none">Back to top <i class="bi bi-arrow-up"></i></a>
         </p>
       </div>
     </footer>
 
     <!-- ===== BACK TO TOP BUTTON ===== -->
-    <button
-      class="back-to-top"
-      id="backToTop"
-      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
-    >
+    <button class="back-to-top" id="backToTop" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
       <i class="bi bi-chevron-up"></i>
     </button>
 
     <!-- ===== WHATSAPP FLOAT ===== -->
-    <a href="https://wa.me/918446785610" target="_blank" class="whatsapp-float"
-      ><i class="bi bi-whatsapp"></i
-    ></a>
+    <a href="https://wa.me/918446785610" target="_blank" class="whatsapp-float"><i class="bi bi-whatsapp"></i></a>
 
     <!-- ===== PROJECT MODAL ===== -->
     <div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
@@ -4685,17 +4193,11 @@
         <div class="modal-content">
           <div class="modal-header border-0">
             <h5 class="modal-title fw-bold" id="modalTitle">Project</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-            ></button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
           <div class="modal-body modal-project-content" id="modalBody"></div>
           <div class="modal-footer border-0">
-            <button class="btn btn-secondary" data-bs-dismiss="modal">
-              Close
-            </button>
+            <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
@@ -4718,10 +4220,7 @@
         );
       }
     </script>
-    <script
-      type="text/javascript"
-      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-    ></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <script>
       // ==========================================
@@ -4748,9 +4247,7 @@
       // ==========================================
       function initTheme() {
         const savedTheme = localStorage.getItem("theme");
-        const prefersDark = window.matchMedia(
-          "(prefers-color-scheme: dark)",
-        ).matches;
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const icon = document.querySelector("#themeToggle i");
 
         if (savedTheme === "dark") {
@@ -4794,9 +4291,7 @@
         fills.forEach((f) => observer.observe(f));
 
         // Resume button animation
-        const resumeBtns = document.querySelectorAll(
-          "#resumeNavBtn, #resumeHeroBtn",
-        );
+        const resumeBtns = document.querySelectorAll("#resumeNavBtn, #resumeHeroBtn");
         resumeBtns.forEach((btn) => {
           btn.addEventListener("click", function (e) {
             this.classList.add("resume-btn-animate");
@@ -4840,8 +4335,7 @@
       function generateCaptcha() {
         const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
         let code = "";
-        for (let i = 0; i < 5; i++)
-          code += chars.charAt(Math.floor(Math.random() * chars.length));
+        for (let i = 0; i < 5; i++) code += chars.charAt(Math.floor(Math.random() * chars.length));
         return code;
       }
 
@@ -4865,22 +4359,15 @@
           return false;
         }
 
-        const name = document.querySelector(
-          '#contactForm input[type="text"]',
-        ).value;
-        const email = document.querySelector(
-          '#contactForm input[type="email"]',
-        ).value;
+        const name = document.querySelector('#contactForm input[type="text"]').value;
+        const email = document.querySelector('#contactForm input[type="email"]').value;
         const message = document.querySelector("#contactForm textarea").value;
 
         const whatsappMessage = `Hello Sanika! 👋\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}\n\n(Message sent from your portfolio website)`;
         const encodedMessage = encodeURIComponent(whatsappMessage);
         const whatsappNumber = "918446785610";
 
-        window.open(
-          `https://wa.me/${whatsappNumber}?text=${encodedMessage}`,
-          "_blank",
-        );
+        window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, "_blank");
 
         e.target.reset();
         refreshCaptcha();
@@ -4899,8 +4386,7 @@
         }
 
         document.getElementById("imageModalImg").src = src;
-        document.getElementById("imageModalTitle").textContent =
-          title || "Image";
+        document.getElementById("imageModalTitle").textContent = title || "Image";
         document.getElementById("imageModalDesc").textContent = desc || "";
 
         const tagsContainer = document.getElementById("imageModalTags");
@@ -5082,8 +4568,7 @@
         document.getElementById("certModalTitle").textContent = cert.title;
         document.getElementById("certModalOrg").textContent = cert.org;
         document.getElementById("certModalDate").textContent = cert.date;
-        document.getElementById("certModalCounter").textContent =
-          `${currentCertIndex + 1} of ${certificates.length}`;
+        document.getElementById("certModalCounter").textContent = `${currentCertIndex + 1} of ${certificates.length}`;
 
         const imgElement = document.getElementById("certModalImg");
         imgElement.src = cert.img;
@@ -5114,10 +4599,8 @@
           }
         };
 
-        document.getElementById("certPrevBtn").disabled =
-          currentCertIndex === 0;
-        document.getElementById("certNextBtn").disabled =
-          currentCertIndex === certificates.length - 1;
+        document.getElementById("certPrevBtn").disabled = currentCertIndex === 0;
+        document.getElementById("certNextBtn").disabled = currentCertIndex === certificates.length - 1;
       }
 
       function navigateCert(direction) {
@@ -5132,24 +4615,22 @@
       // 14. CERTIFICATE IMAGE ERROR HANDLING
       // ==========================================
       document.addEventListener("DOMContentLoaded", function () {
-        document
-          .querySelectorAll(".cert-img-placeholder img")
-          .forEach((img) => {
-            img.onerror = function () {
-              this.style.display = "none";
-              const placeholder = this.parentElement;
-              if (placeholder) {
-                if (!placeholder.querySelector(".cert-fallback")) {
-                  const fallback = document.createElement("div");
-                  fallback.className = "cert-fallback";
-                  fallback.style.cssText =
-                    "display:flex;align-items:center;justify-content:center;width:100%;height:100%;color:#8f8f6a;font-size:0.9rem;text-align:center;padding:10px;";
-                  fallback.textContent = "📷 Image not available";
-                  placeholder.appendChild(fallback);
-                }
+        document.querySelectorAll(".cert-img-placeholder img").forEach((img) => {
+          img.onerror = function () {
+            this.style.display = "none";
+            const placeholder = this.parentElement;
+            if (placeholder) {
+              if (!placeholder.querySelector(".cert-fallback")) {
+                const fallback = document.createElement("div");
+                fallback.className = "cert-fallback";
+                fallback.style.cssText =
+                  "display:flex;align-items:center;justify-content:center;width:100%;height:100%;color:#8f8f6a;font-size:0.9rem;text-align:center;padding:10px;";
+                fallback.textContent = "📷 Image not available";
+                placeholder.appendChild(fallback);
               }
-            };
-          });
+            }
+          };
+        });
       });
 
       console.log("🚀 Sanika Pise Portfolio loaded successfully!");
